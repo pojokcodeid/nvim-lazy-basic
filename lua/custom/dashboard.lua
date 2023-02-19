@@ -21,6 +21,8 @@ local M = {}
 -- 	[[ \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/]],
 -- }
 
+-- M.footer = "PCode"
+
 M.model = 2 -- isi dengan 1 atau 2 untuk model dashboard
 
 return M
