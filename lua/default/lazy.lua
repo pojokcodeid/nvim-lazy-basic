@@ -18,7 +18,6 @@ require("lazy").setup({
         require("user.keymaps")
         require("user.autocommands")
         require("user.format_onsave")
-        require("user.treesitter")
 			end,
 		},
 		{
