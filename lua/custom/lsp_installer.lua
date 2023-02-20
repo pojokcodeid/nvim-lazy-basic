@@ -3,7 +3,7 @@
 -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 local m = {
 	lspinstall = {
-		"yamlls", -- tambahkan di bawah sini untuk lsp tidak support mason
+		-- "yamlls", -- tambahkan di bawah sini untuk lsp tidak support mason
 	},
 }
 return m
