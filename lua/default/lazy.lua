@@ -11,6 +11,7 @@ require("lazy").setup({
 	spec = {
 		{
 			"pojokcodeid/nvim-lazy",
+			priority = 1000,
 			import = "plugins",
 			config = function()
 				require("user.colorscheme")
