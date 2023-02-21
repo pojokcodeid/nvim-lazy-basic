@@ -14,10 +14,6 @@ require("lazy").setup({
 			import = "plugins",
 			config = function()
 				require("user.colorscheme")
-				-- require("user.options")
-				-- require("user.keymaps")
-				-- require("user.autocommands")
-				-- require("user.format_onsave")
 			end,
 		},
 		{
