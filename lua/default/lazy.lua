@@ -14,6 +14,7 @@ require("lazy").setup({
 			import = "plugins",
 			config = function()
 				require("user.colorscheme")
+				require("user.keymaps")
 			end,
 		},
 		{
