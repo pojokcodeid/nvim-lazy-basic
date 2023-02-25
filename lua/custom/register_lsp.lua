@@ -1,9 +1,8 @@
 -- untuk referesi support language kunjungi link dibawah
 -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 local M = {
-  	lspreg = {
+	lspreg = {
 		"bashls",
-		"jdtls",
 		"intelephense",
 		"marksman",
 		"csharp_ls",
