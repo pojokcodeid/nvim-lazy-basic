@@ -86,6 +86,7 @@ vim.g.pcode_register_lsp = {
 	"clangd",
 	"dartls",
 	"kotlin_language_server",
+	"gopls",
 	-- tambahkan di bawah sini setelah melakukan :masoninstall
 }
 vim.g.pcode_unregister_lsp = {
@@ -116,5 +117,13 @@ vim.g.pcode_whichkey = {
 
 -- https://github.com/CRAG666/code_runner.nvim
 vim.g.pcode_coderunner = {
+	java = "cd $dir && javac $fileName && java $fileNameWithoutExt",
+	python = "python3 -u",
+	typescript = "deno run",
+	rust = "cd $dir && rustc $fileName && $dir/$fileNameWithoutExt",
+	-- cpp="gcc $fileName -lstdc++ -o $fileNameWithoutExt && $fileNameWithoutExt"
+	cpp = "g++ $fileName -o $fileNameWithoutExt && $dir/$fileNameWithoutExt",
+	scss = "sass $dir/$fileName $dir/$fileNameWithoutExt.css",
 	javascript = "node $dir/$fileName",
+	go = "go run $fileName",
 }
