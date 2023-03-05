@@ -74,7 +74,7 @@ vim.g.pcode_format_on_save = 1
 -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 vim.g.pcode_lsp_installer = {
 	"yamlls",
-	-- tambahkan di bawah sini setelah melakukan :masoninstall
+	-- tambahkan di bawah sini
 }
 -- untuk referesi support language kunjungi link dibawah
 -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
