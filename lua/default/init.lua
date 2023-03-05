@@ -1,3 +1,5 @@
+require("custom.default")
+require("custom.dashboard")
 require("default.lazy")
 require("default.options")
 require("default.autocommands")
