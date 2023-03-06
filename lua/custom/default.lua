@@ -78,17 +78,17 @@ vim.g.pcode_lsp_installer = {
 }
 -- untuk referesi support language kunjungi link dibawah
 -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
-vim.g.pcode_register_lsp = {
+vim.g.pcode_mason_ensure_installed = { -- sebelumnya register_lsp
 	"yamlls",
-	"intelephense",
-	"marksman",
-	"csharp_ls",
-	"clangd",
-	"dartls",
-	"kotlin_language_server",
-	"gopls",
+	-- "intelephense",
+	-- "marksman",
+	-- "csharp_ls",
+	-- "clangd",
+	-- "dartls",
+	-- "kotlin_language_server",
 	-- tambahkan di bawah sini setelah melakukan :masoninstall
 }
+
 vim.g.pcode_unregister_lsp = {
 	"jdtls", -- tambahkan di bawah ini
 }
