@@ -73,8 +73,8 @@ vim.g.pcode_format_on_save = 1
 -- untuk referesi support language kunjungi link dibawah
 -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 vim.g.pcode_lsp_installer = {
-	"yamlls",
-	-- tambahkan di bawah sini
+	-- "yamlls",
+	-- tambahkan di bawah sini setelah melakukan :masoninstall
 }
 -- untuk referesi support language kunjungi link dibawah
 -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
@@ -88,17 +88,26 @@ vim.g.pcode_mason_ensure_installed = { -- sebelumnya register_lsp
 	-- "kotlin_language_server",
 	-- tambahkan di bawah sini setelah melakukan :masoninstall
 }
-
 vim.g.pcode_unregister_lsp = {
 	"jdtls", -- tambahkan di bawah ini
 }
 
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md
+vim.g.pcode_null_ls_ensure_installed = {
+	"stylua",
+}
 local formatting = {}
 local diagnostics = {}
 vim.g.pcode_null_ls_sources = {
 	formatting.stylua, -- tambahkan di bawah sini
 	diagnostics.flake8, -- tambahkan di bawah sini
+}
+
+-- dap instal hanya support linux dan mac
+-- https://github.com/jay-babu/mason-nvim-dap.nvim/blob/main/lua/mason-nvim-dap/mappings/source.lua
+-- atau gunakan :MasonInstall
+vim.g.pcode_dap_ensure_installed = {
+	-- "python",
 }
 
 -- https://github.com/folke/which-key.nvim
@@ -116,14 +125,7 @@ vim.g.pcode_whichkey = {
 }
 
 -- https://github.com/CRAG666/code_runner.nvim
+-- ready default java, python, typescript, javascript, rust, cpp, scss
 vim.g.pcode_coderunner = {
-	java = "cd $dir && javac $fileName && java $fileNameWithoutExt",
-	python = "python3 -u",
-	typescript = "deno run",
-	rust = "cd $dir && rustc $fileName && $dir/$fileNameWithoutExt",
-	-- cpp="gcc $fileName -lstdc++ -o $fileNameWithoutExt && $fileNameWithoutExt"
-	cpp = "g++ $fileName -o $fileNameWithoutExt && $dir/$fileNameWithoutExt",
-	scss = "sass $dir/$fileName $dir/$fileNameWithoutExt.css",
-	javascript = "node $dir/$fileName",
 	go = "go run $fileName",
 }
