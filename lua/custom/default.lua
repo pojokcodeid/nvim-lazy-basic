@@ -87,6 +87,9 @@ vim.g.pcode_lsp_installer = {
 -- use for lsp diagnostics virtual text
 vim.g.pcode_lsp_virtualtext = false
 
+-- use for lsp ghost text config
+vim.g.pcode_lspghost_text = false
+
 -- untuk referesi support language kunjungi link dibawah
 -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 vim.g.pcode_mason_ensure_installed = { -- sebelumnya register_lsp
