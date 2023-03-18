@@ -8,6 +8,23 @@ return {
 			require("user.lualine")
 		end,
 	},
-	--- masukan plugin tambahan disini
-	{ "folke/trouble.nvim", enabled = false }, -- ini untuk disable plugin
+	-- You can deactivate the plugin below
+	-- unremark the plugins
+	-- change true to false
+
+	-- -- default false
+	-- { "folke/trouble.nvim", enabled = false }, -- for show the trouble
+	-- { "RRethy/vim-illuminate", event = "BufRead", enabled = false }, -- for hilight text
+
+	-- -- default true
+	-- { "saadparwaiz1/cmp_luasnip", event = "BufRead", enabled = true }, -- for cmp luasnip
+	-- { "hrsh7th/cmp-nvim-lua", event = "BufRead", enabled = true }, -- for cmp nvim lua
+	-- { "gelguy/wilder.nvim", enabled = true }, -- for cmp cmd line
+	-- { "williamboman/nvim-lsp-installer", event = "VeryLazy", lazy = true, enabled = true }, -- for install lsp not support mason
+	-- { "mg979/vim-visual-multi", event = "BufRead", enabled = true }, --for select multiple
+	-- { "rcarriga/nvim-notify", enabled = true }, -- for alert notification
+	-- { "karb94/neoscroll.nvim", event = "BufRead", enabled = true }, --for smooth scroll
+	-- { "dstein64/nvim-scrollview", event = "BufRead", enabled = true }, -- for scroll view
+	-- { "dstein64/vim-startuptime", event = "BufRead", enabled = true }, -- fro check startuptime
+	-- { "moll/vim-bbye", event = "BufRead", enabled = true }, -- for delete buffers (close files) without closing your windows
 }
