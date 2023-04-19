@@ -1,13 +1,21 @@
 -- custom plugins disini
 return {
 	{ "nvim-treesitter/nvim-treesitter" },
-	{
-		"nvim-lualine/lualine.nvim",
-		event = "BufWinEnter",
-		config = function()
-			require("user.lualine")
-		end,
-	},
+	-- -- for tree exploler
+	-- {
+	-- 	"kyazdani42/nvim-tree.lua",
+	-- 	event = "BufRead",
+	-- 	cmd = { "NvimTree", "NvimTreeToggle", "NvimTreeFocus", "NvimTreeClose" },
+	-- 	-- dependencies = "kyazdani42/nvim-web-devicons",
+	-- 	config = function()
+	-- 		local data_exists, treeconfig = pcall(require, "core.config")
+	-- 		if data_exists then
+	-- 			if treeconfig.loadnvimtree_lazy then
+	-- 				require("user.nvim-tree")
+	-- 			end
+	-- 		end
+	-- 	end,
+	-- },
 	-- You can deactivate the plugin below
 	-- unremark the plugins
 	-- change true to false

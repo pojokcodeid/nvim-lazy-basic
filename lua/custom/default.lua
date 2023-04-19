@@ -85,7 +85,7 @@ vim.g.pcode_lsp_installer = {
 }
 
 -- use for lsp diagnostics virtual text
-vim.g.pcode_lsp_virtualtext = false
+vim.g.pcode_lsp_virtualtext = true
 
 -- use for lsp ghost text config
 vim.g.pcode_lspghost_text = false
@@ -142,3 +142,4 @@ vim.g.pcode_coderunner = {
 vim.g.pcode_cmprg = false --https://github.com/lukas-reineke/cmp-rg
 vim.g.pcode_cmpcalc = false --https://github.com/hrsh7th/cmp-calc
 vim.g.pcode_cmptag = false --https://github.com/quangnguyen30192/cmp-nvim-tags
+vim.g.pcode_loadnvimtree_lazy = true
