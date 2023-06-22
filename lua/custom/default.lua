@@ -69,7 +69,7 @@ vim.g.pcode_status_icon = 0
 --     { left = "", right = "" },
 --   },
 -- }
-vim.g.pcode_custom_lualine = false
+vim.g.pcode_custom_lualine = true
 vim.g.pcode_component_separators = { left = " ", right = " " }
 vim.g.pcode_section_separators = { left = "", right = " " }
 
