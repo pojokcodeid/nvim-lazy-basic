@@ -128,6 +128,7 @@ vim.g.pcode_whichkey = {
 	["r"] = {
 		name = "Run",
 		j = { "<cmd>Jaq float<CR>", "Run With Jaq" },
+		g = { "<cmd>terminal<cr>gradle run<cr>", "Run Gradle" },
 	},
 	["o"] = { "<cmd>SymbolsOutline<cr>", "Symbol Outline" },
 }
