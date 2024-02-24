@@ -1,7 +1,7 @@
 -- custom plugins disini
 return {
 	{ "nvim-treesitter/nvim-treesitter" },
-	{ "mfussenegger/nvim-jdtls", event = "BufRead" },
+	-- { "mfussenegger/nvim-jdtls", event = "BufRead" },
 	-- -- for tree exploler
 	-- {
 	-- 	"kyazdani42/nvim-tree.lua",
