@@ -26,8 +26,8 @@ vim.g.pcode_colorscheme = "tokyonight"
 --  dracula
 --  nightfox
 -- 0 =off   1= on
-vim.g.pcode_transparent_mode = 0
-vim.g.pcode_clear_lualine = 0
+vim.g.pcode_transparent_mode = 1
+vim.g.pcode_clear_lualine = 1
 
 -- 0 disable progress
 -- 1 lualine lsp progress
