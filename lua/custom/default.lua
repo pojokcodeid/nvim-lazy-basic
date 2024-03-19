@@ -76,14 +76,6 @@ vim.g.pcode_section_separators = { left = "", right = " " }
 -- 0 ( format jalan)  1 (fromat off)
 vim.g.pcode_format_on_save = 1
 
--- ini hanya untuk lsp yg tidak support masson
--- untuk referesi support language kunjungi link dibawah
--- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
-vim.g.pcode_lsp_installer = {
-	-- "yamlls",
-	-- tambahkan di bawah sini setelah melakukan :masoninstall
-}
-
 -- use for lsp diagnostics virtual text
 vim.g.pcode_lsp_virtualtext = true
 
