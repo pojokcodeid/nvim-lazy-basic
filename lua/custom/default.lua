@@ -11,7 +11,7 @@
 -- catppuccin, catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
 -- dracula
 -- nightfox, dayfox, dawnfox, duskfox, nordfox, terafox, carbonfox
-vim.g.pcode_colorscheme = "tokyonight"
+vim.g.pcode_colorscheme = "onedark"
 
 -- custom transparent mode
 -- only support
@@ -31,7 +31,7 @@ vim.g.pcode_clear_lualine = 0
 -- 0 disable progress
 -- 1 lualine lsp progress
 -- 2 fidget progress
-vim.g.pcode_progress = 2
+vim.g.pcode_progress = 1
 
 -- style
 -- 0 =  default
