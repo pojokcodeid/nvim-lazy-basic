@@ -1,7 +1,7 @@
 return {
 	{
 		"nvim-lualine/lualine.nvim",
-		event = "BufWinEnter",
+		event = { "BufRead", "BufNewFile" },
 		config = function()
 			local hide_in_width = function()
 				return vim.fn.winwidth(0) > 80
