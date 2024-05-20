@@ -11,7 +11,7 @@
 -- catppuccin, catppuccin-latte, catppuccin-frappe, catppuccin-macchiato, catppuccin-mocha
 -- dracula
 -- nightfox, dayfox, dawnfox, duskfox, nordfox, terafox, carbonfox
-vim.g.pcode_colorscheme = "onedark"
+vim.g.pcode_colorscheme = "dracula"
 
 -- custom transparent mode
 -- only support
@@ -33,47 +33,7 @@ vim.g.pcode_clear_lualine = 0
 -- 2 fidget progress
 vim.g.pcode_progress = 1
 
--- style
--- 0 =  default
--- 1 = { left = "", right = "" },
--- 2 = { left = " ", right = " " },
--- 3 = { left = "", right = "" },
-vim.g.pcode_lualine_style = 0
-
--- style status icon
--- 0 = default
--- 1 = vim icon " "
--- 2 = vim icon " "
-vim.g.pcode_status_icon = 0
-
--- start custom lualine style
--- contoh style
---   {
---     { left = "│", right = "│" },
---     { left = " ", right = " " },
---   },
---   {
---     { left = " ", right = " " },
---     { left = " ", right = "" },
---   },
---   {
---     { left = " ", right = " " },
---     { left = "", right = "" },
---   },
---   {
---     { left = "", right = "" },
---     { left = "", right = "" },
---   },
---   {
---     { left = " ", right = " " },
---     { left = "", right = "" },
---   },
--- }
-vim.g.pcode_custom_lualine = true
-vim.g.pcode_component_separators = { left = " ", right = " " }
-vim.g.pcode_section_separators = { left = "", right = " " }
-
--- 0 ( format jalan)  1 (fromat off)
+-- 1 ( format jalan)  0 (fromat off)
 vim.g.pcode_format_on_save = 1
 
 -- use for lsp diagnostics virtual text
