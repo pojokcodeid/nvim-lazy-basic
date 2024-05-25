@@ -13,20 +13,17 @@
 -- nightfox, dayfox, dawnfox, duskfox, nordfox, terafox, carbonfox
 vim.g.pcode_colorscheme = "dracula"
 
--- custom transparent mode
--- only support
---  gruvbox-baby,
---  tokyonight,
---  sonokai,
---  material
---  onedark
---  catppuccin
---  nord
---  dracula
---  nightfox
 -- 0 =off   1= on
 vim.g.pcode_transparent_mode = 0
-vim.g.pcode_clear_lualine = 0
+
+-- rounded
+-- roundedall
+-- square
+-- triangle
+-- parallelogram
+-- transparent
+-- default
+vim.g.pcode_lualinetheme = "rounded"
 
 -- 0 disable progress
 -- 1 lualine lsp progress
