@@ -26,7 +26,14 @@ vim.g.pcode_transparent_mode = 0
 -- parallelogram
 -- transparent
 -- default
-vim.g.pcode_lualinetheme = "rounded"
+vim.g.pcode_lualinetheme = "roundedall"
+
+-- 0 = full text mode + logo,
+-- 1 = initial mode + logo
+-- 2 = logo only
+-- 3 = initial only
+-- 4 = off
+vim.g.pcode_show_mode = 0
 
 -- 0 disable progress
 -- 1 lualine lsp progress
