@@ -14,7 +14,7 @@
 -- github_dark, github_dark_default, github_dark_colorblind, github_dark_dimmed
 -- solarized-osaka
 -- darcula-dark
-vim.g.pcode_colorscheme = "dracula"
+vim.g.pcode_colorscheme = "darcula-dark"
 
 -- 0 =off   1= on
 vim.g.pcode_transparent_mode = 0
@@ -97,11 +97,6 @@ vim.g.pcode_whichkey = {
 vim.g.pcode_coderunner = {
 	go = "go run $fileName",
 }
-
--- config for optional cmp
-vim.g.pcode_cmprg = false --https://github.com/lukas-reineke/cmp-rg
-vim.g.pcode_cmpcalc = false --https://github.com/hrsh7th/cmp-calc
-vim.g.pcode_cmptag = false --https://github.com/quangnguyen30192/cmp-nvim-tags
 
 -- 0 = normal
 -- 1 = float

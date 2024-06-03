@@ -12,15 +12,14 @@ require("lazy").setup({
 	spec = {
 		{
 			"pojokcodeid/nvim-lazy",
-			import = "plugins",
+			import = "plugins.themes",
 			config = function()
 				require("user.colorscheme")
 				require("user.keymaps")
 			end,
 		},
-		{
-			import = "plugin",
-		},
+		{import = "plugins"},
+		{import = "plugin"},
 	},
 	defaults = {
 		lazy = true, -- every plugin is lazy-loaded by default
