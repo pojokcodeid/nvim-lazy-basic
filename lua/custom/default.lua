@@ -103,9 +103,17 @@ vim.g.pcode_coderunner = {
 vim.g.pcode_nvimtree_isfloat = 0
 
 vim.g.pcode_tailwindcolorizer = false
+-- https://github.com/Exafunction/codeium.vim
 vim.g.pcode_codeium = false
+-- https://github.com/Exafunction/codeium.nvim
+vim.g.pcode_codeium_nvim = false
+-- https://github.com/kevinhwang91/nvim-ufo
 vim.g.pcode_nvimufo = false
+-- https://github.com/echasnovski/mini.indentscope
 vim.g.pcode_indentscope = false
+-- https://github.com/echasnovski/mini.animate
 vim.g.pvode_minianimate = false
 
 vim.g.pcode_disable_cmpdoc = false
+-- https://github.com/rachartier/tiny-devicons-auto-colors.nvim
+vim.g.pcode_adaptive_color_icon = false
