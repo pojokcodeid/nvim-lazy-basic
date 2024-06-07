@@ -103,6 +103,7 @@ vim.g.pcode_coderunner = {
 -- 1 = float
 vim.g.pcode_nvimtree_isfloat = 0
 
+-- https://github.com/roobert/tailwindcss-colorizer-cmp.nvim
 vim.g.pcode_tailwindcolorizer = false
 -- https://github.com/Exafunction/codeium.vim
 vim.g.pcode_codeium = false
