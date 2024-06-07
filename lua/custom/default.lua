@@ -42,6 +42,7 @@ vim.g.pcode_progress = 1
 
 -- 1 ( format jalan)  0 (fromat off)
 vim.g.pcode_format_on_save = 1
+vim.g.pcode_format_timeout_ms = 5000
 
 -- use for lsp diagnostics virtual text
 vim.g.pcode_lsp_virtualtext = true
