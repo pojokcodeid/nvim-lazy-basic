@@ -113,8 +113,18 @@ vim.g.pcode_nvimufo = false
 -- https://github.com/echasnovski/mini.indentscope
 vim.g.pcode_indentscope = false
 -- https://github.com/echasnovski/mini.animate
-vim.g.pvode_minianimate = false
+vim.g.pcode_minianimate = false
 
 vim.g.pcode_disable_cmpdoc = false
 -- https://github.com/rachartier/tiny-devicons-auto-colors.nvim
 vim.g.pcode_adaptive_color_icon = false
+-- https://github.com/lukas-reineke/virt-column.nvim
+vim.g.pcode_columnline = false
+
+---@alias telescope_themes
+---| "cursor"   # see `telescope.themes.get_cursor()`
+---| "dropdown" # see `telescope.themes.get_dropdown()`
+---| "ivy"      # see `telescope.themes.get_ivy()`
+---| "center"   # retain the default telescope theme
+vim.g.pcode_telescope_theme_find_file = "center"
+vim.g.pcode_telescope_theme_live_grep = "ivy"
