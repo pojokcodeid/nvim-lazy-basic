@@ -128,3 +128,5 @@ vim.g.pcode_columnline = false
 ---| "center"   # retain the default telescope theme
 vim.g.pcode_telescope_theme_find_file = "center"
 vim.g.pcode_telescope_theme_live_grep = "ivy"
+-- https://github.com/kristijanhusak/vim-dadbod-ui
+vim.g.pcode_database = false
