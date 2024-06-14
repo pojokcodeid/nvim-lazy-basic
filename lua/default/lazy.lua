@@ -18,8 +18,8 @@ require("lazy").setup({
 				require("user.keymaps")
 			end,
 		},
-		{import = "plugins"},
-		{import = "plugin"},
+		{ import = "plugins" },
+		{ import = "plugin" },
 	},
 	defaults = {
 		lazy = true, -- every plugin is lazy-loaded by default

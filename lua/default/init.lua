@@ -1,3 +1,4 @@
+_G.pcode = _G.pcode or {}
 require("custom.default")
 require("custom.dashboard")
 require("default.lazy")
