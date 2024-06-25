@@ -36,11 +36,13 @@ pcode.progress = 1
 -- 2 = logo only
 -- 3 = initial only
 -- 4 = off
-pcode.show_mode = 0
+pcode.show_mode = 3
 
 -- 1 ( format jalan)  0 (fromat off)
 pcode.format_on_save = 1
 pcode.format_timeout_ms = 5000
+
+pcode.treesitter_ensure_installed = {}
 
 -- ini hanya untuk lsp yg tidak support masson
 -- untuk referesi support language kunjungi link dibawah
@@ -60,11 +62,10 @@ pcode.lspghost_text = false
 -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 pcode.mason_ensure_installed = { -- sebelumnya register_lsp
 	-- "yamlls",
-	-- "intelephense",
 	-- tambahkan di bawah sini setelah melakukan :masoninstall
 }
 pcode.unregister_lsp = {
-	"jdtls", -- tambahkan di bawah ini
+	-- "jdtls", -- tambahkan di bawah ini
 }
 
 -- https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md
@@ -127,6 +128,12 @@ pcode.adaptive_color_icon = false
 -- https://github.com/lukas-reineke/virt-column.nvim
 pcode.columnline = false
 
+-- https://github.com/okuuva/auto-save.nvim
+pcode.auto_save = false
+
+-- https://github.com/folke/todo-comments.nvim
+pcode.todo_comment = false
+
 -- https://github.com/nvim-telescope/telescope.nvim
 ---@alias telescope_themes
 ---| "cursor"   # see `telescope.themes.get_cursor()`
@@ -134,7 +141,7 @@ pcode.columnline = false
 ---| "ivy"      # see `telescope.themes.get_ivy()`
 ---| "center"   # retain the default telescope theme
 pcode.telescope_theme_find_file = "center"
-pcode.telescope_theme_live_grep = "ivy"
+pcode.telescope_theme_live_grep = "dropdown"
 
 -- https://github.com/ThePrimeagen/refactoring.nvim
 pcode.refactoring = false
@@ -147,19 +154,19 @@ pcode.rest_client = false
 
 -- https://github.com/mfussenegger/nvim-dap
 pcode.nvim_dap = false -- not support for windows os (auto config mason-nvim-dap)
-pcode.nvim_dap_javascript = false
-pcode.nvim_dap_php = false
-pcode.nvim_dap_python = false
-pcode.nvim_dap_go = false
 
--- https://github.com/olimorris/neotest-phpunit
-pcode.phpunit = false
--- https://github.com/nvim-neotest/neotest-python
--- https://docs.pytest.org/en/7.1.x/getting-started.html
-pcode.pytest = false
--- https://github.com/nvim-neotest/neotest-jest
-pcode.jest = false
-pcode.jest_command = "npm test -- "
-pcode.jest_config = "jest.config.mjs"
--- https://github.com/fredrikaverpil/neotest-golang
-pcode.gotest = false
+-- conefig special support test & dap
+pcode.active_rust_config = false
+pcode.active_javascript_config = {
+	active = false,
+	jest_command = "npm test -- ",
+	jest_config = "jest.config.mjs",
+}
+pcode.active_php_config = false
+pcode.active_golang_config = false
+pcode.active_python_config = false
+pcode.active_cpp_config = false
+pcode.active_java_config = {
+	active = false,
+	project = "gradle", -- gradle or maven
+}
