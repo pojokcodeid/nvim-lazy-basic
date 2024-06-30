@@ -38,12 +38,17 @@ pcode.progress = 1
 -- 4 = off
 pcode.show_mode = 3
 
--- 1 ( format jalan)  0 (fromat off)
-pcode.format_on_save = 1
+-- true or false
+pcode.format_on_save = true
 pcode.format_timeout_ms = 5000
 
-pcode.treesitter_ensure_installed = {}
+-- https://github.com/mfussenegger/nvim-lint
+-- https://github.com/stevearc/conform.nvim
+-- use conform and nvim-lint if set true
+pcode.disable_null_ls = true
 
+pcode.treesitter_ensure_installed = {}
+pcode.tscontext = false
 -- ini hanya untuk lsp yg tidak support masson
 -- untuk referesi support language kunjungi link dibawah
 -- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
@@ -153,7 +158,7 @@ pcode.database = false
 pcode.rest_client = false
 
 -- https://github.com/mfussenegger/nvim-dap
-pcode.nvim_dap = false -- not support for windows os (auto config mason-nvim-dap)
+pcode.nvim_dap = true -- not support for windows os (auto config mason-nvim-dap)
 
 -- conefig special support test & dap
 pcode.active_rust_config = false
@@ -162,6 +167,7 @@ pcode.active_javascript_config = {
 	jest_command = "npm test -- ",
 	jest_config = "jest.config.mjs",
 }
+pcode.active_prisma_config = false
 pcode.active_php_config = false
 pcode.active_golang_config = false
 pcode.active_python_config = false
@@ -169,4 +175,7 @@ pcode.active_cpp_config = false
 pcode.active_java_config = {
 	active = false,
 	project = "gradle", -- gradle or maven
+	use_nvim_jdtls = true, -- mfussenegger/nvim-jdtls
 }
+pcode.active_deno_config = false
+pcode.active_kotlin_config = false
